@@ -1,0 +1,11 @@
+{
+  "globals": {
+    "confirm": "readonly",
+    "alert": "readonly",
+    "prompt": "readonly",
+    "localStorage": "readonly",
+    "sessionStorage": "readonly",
+    "document": "readonly",
+    "window": "readonly"
+  }
+}

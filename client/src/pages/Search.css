@@ -1,0 +1,280 @@
+.search-page {
+  padding: 20px 0;
+}
+
+.search-header {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.search-input-container {
+  flex: 1;
+  position: relative;
+}
+
+.search-input-large {
+  width: 100%;
+  padding: 14px 50px 14px 20px;
+  border: 2px solid #e8e8e8;
+  border-radius: 24px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input-large:focus {
+  border-color: #1890ff;
+}
+
+.search-btn-large {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.search-btn-large:hover {
+  background-color: #f5f5f5;
+}
+
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  margin-top: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.suggestion-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.suggestion-item:hover {
+  background-color: #f5f5f5;
+}
+
+.filter-toggle-btn {
+  padding: 12px 20px;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.filter-toggle-btn:hover {
+  border-color: #1890ff;
+  color: #1890ff;
+}
+
+.filters-panel {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.filter-group {
+  margin-bottom: 16px;
+}
+
+.filter-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-chip {
+  padding: 6px 14px;
+  background-color: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+
+.filter-chip:hover {
+  border-color: #1890ff;
+}
+
+.filter-chip.active {
+  background-color: #e6f7ff;
+  border-color: #1890ff;
+  color: #1890ff;
+}
+
+.price-range {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.price-input {
+  width: 120px;
+  padding: 8px 12px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.search-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 24px;
+}
+
+.search-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-section {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sidebar-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.clear-history-btn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.clear-history-btn:hover {
+  color: #1890ff;
+}
+
+.sort-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sort-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+}
+
+.sort-option input {
+  cursor: pointer;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.history-item {
+  padding: 8px;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.history-item:hover {
+  background-color: #f5f5f5;
+}
+
+.results-header {
+  margin-bottom: 16px;
+}
+
+.results-count {
+  font-size: 14px;
+  color: #666;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .search-content {
+    grid-template-columns: 1fr;
+  }
+
+  .search-sidebar {
+    display: none;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-header {
+    flex-direction: column;
+  }
+
+  .filter-toggle-btn {
+    width: 100%;
+  }
+}

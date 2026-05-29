@@ -1,0 +1,14 @@
+{
+  "name": "campus-trading-platform",
+  "version": "1.0.0",
+  "description": "校园二手交易平台",
+  "scripts": {
+    "server": "cd server && node server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm install && cd client && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
